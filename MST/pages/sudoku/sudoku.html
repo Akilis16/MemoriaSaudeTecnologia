@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/sudoku/sudoku.css">
+    <link rel="shortcut icon" href="../../img/Jogo_da_Memoria/brain.png" type="image/x-icon">
+    <title>MST</title>
+
+</head>
+<body>
+
+    <header>           
+        <div class="logo-container">
+            <a href="../../index.html">
+                <img src="../../img/Logo.png" alt="Logo">
+                <h1>MST</h1>
+            </a>
+        </div> 
+        <hr>
+    </header>
+
+    <section class="voltar">
+
+        <a href="../../index.html">
+            <div class="voltar-op-1">
+                <img src="../../img/icon/house.svg" alt="">
+            </div>
+        </a>
+
+        <a href="../jogo-da-velha/jogo-da-velha-modo.html">
+            <div class="voltar-op-2">
+                <img src="../../img/icon/arrow-left.svg" alt="">
+            </div>
+        </a>
+
+    </section>
+
+    <h1>SUDOKU</h1>
+
+    <div id="main">
+        <div id="row1">
+           <div id="box1" class="box"></div>
+           <div id="box2" class="box"></div>
+           <div id="box3" class="box"></div> 
+        </div>
+        <div id="row2">
+            <div id="box4" class="box"></div>
+            <div id="box5" class="box"></div>
+            <div id="box6" class="box"></div>
+        </div>
+        <div id="row3">
+            <div id="box7" class="box"></div>
+            <div id="box8" class="box"></div>
+            <div id="box9" class="box"></div>
+        </div>
+    </div>
+
+    <button type="button" id="start" onclick="start()">JOGAR</button>
+    <button type="button" id="replay" onclick="replay()">NOVO JOGO</button>
+    <button type="button" id="answer" onclick="answer()">RESPOSTA</button>
+
+    <div id="game_type">
+        <h3>ESCOLHA O NIVEL:</h3>
+        <label><input type="radio" id="easy" class="label" name="diff_level" checked> fácil</label>
+        <label><input type="radio" id="medium" class="label" name="diff_level" > Médio</label>
+        <label><input type="radio" id="hard" class="label" name="diff_level"> Dificil</label>
+        <h3>TEMPO LIMITE :</h3>
+        <label><input type="radio" id="time1" class="label" name="time"><span id="time1_min">03</span>:<span id="time1_sec">00</span></label>
+        <label><input type="radio" id="time2" class="label" name="time" checked><span id="time2_min">05</span>:<span id="time2_sec">00</span></label>
+        <label><input type="radio" id="time3" class="label" name="time"> <span id="time3_min">10</span>:<span id="time3_sec">00</span></label>
+        
+
+    </div>
+
+    <div id="lives">Você só tem uma <span id="rem_live"></span> chance</div>
+
+    <div id="timer">Tempo Restante: <span id="time_min">00</span>:<span id="time_sec">00</span></div>
+
+    <footer>
+        <h1>Todos os direitos reservados a MST &copy;Copyright</h1>
+    </footer>
+
+
+    <script src="../../js/sudoku/sudoku.js"></script>
+    
+</body>
+</html>
