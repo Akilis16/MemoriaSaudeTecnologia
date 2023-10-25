@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap');
+
+body{
+    background-color: #ffffff;
+    color: black;
+    margin: 0;
+    
+}
+
+header{
+     background-color: rgb(255, 255, 255);
+     border-bottom: 30px ;
+}
+ 
+header hr {
+     /* border: 2px solid rgb(0, 153, 255); */
+     margin-top: 0.5%;
+     border: 2px solid rgb(0, 0, 0);
+}
+ 
+.logo-container {
+     width: 27vh;
+     display: flex;
+     position: relative;
+     left: 50%;
+     transform: translate(-50%);
+     justify-content: center;
+     text-align: center;   
+}
+ 
+.logo-container a {
+     text-decoration: none;
+}
+ 
+.logo-container img {
+     width: 45%;
+     margin-top: 3%;
+     margin-bottom: 3%;
+     
+}
+ 
+.logo-container img:active {
+     transform: scale(1.05);
+}
+ 
+.logo-container h1 {
+     font-size: 20px;
+     font-family: 'Rowdies', cursive;
+     color: black;
+     /* color: rgb(0, 153, 255) */
+}
+ 
+.voltar {
+     display: flex;
+     gap: 1vh;
+     
+}
+ 
+.voltar div{
+     margin-top: 15%;
+     margin-left: 25%;
+     border: solid;
+     box-shadow: 3px 3px 7px rgb(51, 51, 51);
+     background-color: rgb(211, 237, 255);
+     width: 3vh;
+     height: 3vh;
+     border-radius: 5px;
+     cursor: pointer;
+     border: 2px solid black;
+}
+ 
+.voltar div img {
+     position: relative;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     width: 70%;
+}
+
+h1{
+     margin-top: -2%;
+     text-align: CENTER;
+     font-family: CURSIVE;
+     font-size: 20px;
+     position: relative;
+     left: 50%;
+     transform: translate(-50%);
+     margin-bottom: 3%;
+    
+}
+
+.box{
+     height: 16.2vh;
+     width: 16.2vh;
+     border: solid rgb(0, 0, 0) 2px;
+     background-color: #ffffff;
+     display: grid;
+     grid-template-columns: auto auto auto;
+     
+}
+
+#main{
+     height: 58.3vh;
+     width: 58.3vh;
+     display: flex;
+     flex-direction: row;
+     position: relative;
+     left: 50%;
+     transform: translate(-50%);
+     
+
+}
+
+.cell{
+     height: 4.8vh;
+     width: 4.8vh;
+     border: solid rgb(0, 0, 0) 2px;
+     text-align: center;
+     background-color: #ffffff;
+     text-align: center;
+     font-size: x-large;
+     font-weight: bold;
+}
+input{
+     height: 4.3vh;
+     width: 4.3vh;
+     border: none;
+     text-align: center;
+     font-size: x-large;
+     font-weight: bold;
+     background-color: #ffffff;
+     color: rgb(0, 0, 0);
+}
+button{
+     height: 6vh;
+     width: 16vh;
+     font-weight: bold;
+     background-color: rgb(160, 217, 255);
+     box-shadow: 6px 5px 10px rgb(51, 51, 51);
+     border: solid 2px black;
+     border-radius: 15px;
+     color: rgb(0, 0, 0);
+     position: absolute;
+     cursor: pointer;
+}
+#start{
+     top: 40%;
+     left: 5%;
+}
+#replay{
+     top: 60%;
+     left: 5%;
+}
+#answer{
+     top: 80%;
+     left: 5%;
+}
+ 
+#game_type{
+     position: absolute;
+     top: 24%;
+     left: 80%;
+     
+}
+ 
+.label{
+     height: 15px;
+     width: 15px;
+     cursor: pointer;
+}
+
+
+#lives{
+     position: absolute;
+     top: 20%;
+     left: 78%;
+     color: orangered;
+     font-weight: bold;
+     font-size: x-large;
+
+}
+ 
+#timer{
+     top: 20%;
+     position: absolute;
+     left: 6%;
+     font-size: x-large;
+     color: black;
+     font-weight: bold;
+     
+}
+
+footer {
+    background-color: rgb(160, 217, 255);
+    position: fixed;
+    bottom:0;
+    left:0;
+    width: 100%;
+    text-align: center;
+    height: 4%;
+}
+
+footer h1 {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
